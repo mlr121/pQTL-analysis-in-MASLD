@@ -1,6 +1,6 @@
 # pQTL-analysis-in-MASLD
  
-Analysis code for proteome-wide QTL (pQTL) mapping in a genetically diverse MASLD mouse model (Diversity Outbred / F2 cross), with mediation analysis, ubiquitination (di-glycine) site profiling, and cross-species (mouse-to-human) validation of candidate proteins linking proteostasis to hepatic lipid metabolism. This code supports the manuscript *"Proteome-wide QTL mapping enables gene-protein-phenotype metabolic network construction in a genetically diverse MASLD mouse model."*
+Analysis code for proteome-wide QTL (pQTL) mapping in a genetically diverse MASLD mouse model (CC founders / F2 cross), with mediation analysis, ubiquitination (di-glycine) site profiling, and cross-species (mouse-to-human) validation of candidate proteins linking proteostasis to hepatic lipid metabolism. This code supports the manuscript *"Proteome-wide QTL mapping enables gene-protein-phenotype metabolic network construction in a genetically diverse MASLD mouse model."*
  
 ## Overview
  
@@ -45,7 +45,7 @@ These are the raw data files referenced by the scripts above.
  
 The `functions/` folder should contain any custom helper functions sourced by the scripts above, e.g.:
 - `impute_data()` — used in `mediation_analysis.R` to impute missing protein abundance values before mediation modeling.
-Several scripts also define their own local helper functions inline (e.g., `compute_gam_associations()`, `compute_ubr1_associations()`, `compute_gam_nocov()`) for fitting GAM-based protein–phenotype associations and extracting Kendall's tau, p-value, and deviance explained.
+- Several scripts also define their own local helper functions inline (e.g., `compute_gam_associations()`, `compute_ubr1_associations()`, `compute_gam_nocov()`) for fitting GAM-based protein–phenotype associations and extracting Kendall's tau, p-value, and deviance explained.
  
 ## Requirements
  
