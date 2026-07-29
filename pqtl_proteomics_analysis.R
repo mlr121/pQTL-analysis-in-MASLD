@@ -1,8 +1,21 @@
-#load data and filter to significant ----
+################################################################################
+# Script: pqtl_proteomics_analysis.R
+#
+# Purpose:
+# Process female liver protein quantitative trait locus (pQTL) mapping results,
+# identify genome-wide significant pQTLs, annotate genomic coordinates, classify
+# pQTLs as cis or trans, and generate summary statistics and manuscript figures.
+#
+################################################################################
+
+################################################################################
+# Load genome-wide female liver pQTL mapping results
+################################################################################
 fdata <- read.csv("rawdata/final_Gene_Female_log2_filter05_ProMatrix_QTL.tsv", sep = "\t", stringsAsFactors = F)
 
-
-##filtering ----
+################################################################################
+# Retain genome-wide significant pQTLs for downstream analyses
+################################################################################
 library(dplyr)
 
 fdata$Lod_threshold <- NULL
@@ -10,7 +23,9 @@ fdata$Lod_threshold <- NULL
 pqtls <- fdata %>%
   dplyr::filter(Status == "Significant_001" | Status == "Significant_005")
 
-#annotate with cis and trans ----
+################################################################################
+# Classify significant pQTLs as cis or trans relative to the encoded gene
+################################################################################
 library(ensembldb)
 library(EnsDb.Mmusculus.v79)
 library(dplyr)
