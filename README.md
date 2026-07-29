@@ -1,6 +1,8 @@
 # pQTL-analysis-in-MASLD
  
 Analysis code for proteome-wide QTL (pQTL) mapping in a genetically diverse MASLD mouse model (CC founders / F2 cross), with mediation analysis, ubiquitination (di-glycine) site profiling, and cross-species (mouse-to-human) validation of candidate proteins linking proteostasis to hepatic lipid metabolism. This code supports the manuscript *"Proteome-wide QTL mapping enables gene-protein-phenotype metabolic network construction in a genetically diverse MASLD mouse model."*
+
+Many figures created within these scripts are also available in interactive format online at https://mlr98.shinyapps.io/pQTL_MASLD/
  
 ## Overview
  
