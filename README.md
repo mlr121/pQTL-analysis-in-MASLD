@@ -28,6 +28,9 @@ pQTL-analysis-in-MASLD/
 │   └── impute_data.R
 └── data/
     ├── raw/
+      ├── mouse_liver_proteomics.zip/
+       ├── Auwerx_Liver_4databasesearch_PG_FINAL
+      ├── rawdata.zip/
        ├── final_Gene_Female_log2_filter05_ProMatrix_QTL.tsv
        ├── fixcol_ProMatrix_metadata.csv
        ├── F2_phenotypes.csv
@@ -38,7 +41,7 @@ pQTL-analysis-in-MASLD/
        ├── Mus_musculus_casteij.CAST_EiJ_v1.pep.all.fasta
        ├── Mus_musculus_pwkphj.PWK_PhJ_v1.pep.all.fasta
        ├── Mus_musculus_129s1svimj.129S1_SvImJ_v1.pep.all.fasta
-       └── human/
+      ├── human.zip/
            ├── human_proteomics.csv
            ├── human_metadata.csv
            └── 20260108_102414_HumanLiver_Report_PTM.csv
